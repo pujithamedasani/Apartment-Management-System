@@ -158,6 +158,19 @@ body {
   color: var(--accent);
   line-height: 1.2;
 }
+.brand-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(1.5);
+}
+
 .sidebar-brand small { color: var(--text-muted); font-size: 0.75rem; }
 .sidebar nav { flex: 1; padding: 0 0.75rem; }
 .sidebar-link {
