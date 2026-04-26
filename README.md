@@ -144,5 +144,5 @@ skypark-apartment-mgmt/
 | Role     | Email                   | Password    |
 |----------|-------------------------|-------------|
 | Admin    | admin@skypark.com       | Admin@123   |
-| Resident | resident@skypark.com    | Resident@1  |
+| Resident | resident1@skypark.com    | Resident@1  |
 | Staff    | staff@skypark.com       | Staff@123   |
