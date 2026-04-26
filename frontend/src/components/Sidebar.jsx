@@ -42,10 +42,17 @@ export default function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-brand">
-        <h6>SKY-PARK<br />Apartments</h6>
-        <small className="d-block mt-1" style={{ color: '#c084fc' }}>{user?.role}</small>
-      </div>
+  <div className="sidebar-brand">
+    <div className="brand-top">
+      <img src="/logo.png" alt="logo" className="sidebar-logo" />
+      <h6>
+        SKY-PARK<br />Apartments
+      </h6>
+    </div>
+    <small className="d-block mt-1" style={{ color: '#c084fc' }}>
+      {user?.role}
+    </small>
+  </div>
       <nav>
         {links.map(link => (
           <NavLink
