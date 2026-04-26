@@ -29,6 +29,10 @@ app.use(express.urlencoded({ extended: true }));
 // ── Connect DB (non-blocking – server starts even if DB is not configured) ───
 connectDB();
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
 // ── API Routes ───────────────────────────────────────────────────────────────
 app.use('/api/auth',       authRoutes);
 app.use('/api/users',      userRoutes);
