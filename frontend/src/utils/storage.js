@@ -33,17 +33,17 @@ export function seedData() {
     ]);
   }
   if (!localStorage.getItem(KEYS.PAYMENTS)) {
-    setItem(KEYS.PAYMENTS, [
-      { id: 1, userId: 2, category: 'Resident Income', amount: 5638, reason: 'Monthly maintenance for shared costs', date: '2026-04-01' },
-      { id: 2, userId: 2, category: 'Facility Booking', amount: 7000, reason: 'Clubhouse + deposit', date: '2026-04-05' },
-      { id: 3, userId: 2, category: 'Move-In (MIMO)', amount: 1500, reason: 'Lift + security coordination', date: '2026-04-10' },
-      { id: 4, userId: 2, category: 'Vendor Payment', amount: 250000, reason: 'Security agency contract', date: '2026-04-12' },
-      { id: 5, userId: 2, category: 'Petty Cash', amount: 500, reason: 'Emergency plumbing items', date: '2026-04-15' },
-      { id: 6, userId: 2, category: 'Utility Outflow', amount: 85000, reason: 'Electricity & water systems', date: '2026-04-18' },
-      { id: 7, userId: 2, category: 'Legal/Admin', amount: 10000, reason: 'CA + GST filings', date: '2026-04-20' },
-      { id: 8, userId: 2, category: 'Late Fee', amount: 250, reason: 'Penalty for delayed payments', date: '2026-04-22' },
-    ]);
-  }
+  setItem(KEYS.PAYMENTS, [
+    { id: 1, userId: 2, category: 'Resident Income', amount: 5638, reason: 'Monthly maintenance for shared costs', date: '2026-04-01' },
+    { id: 2, userId: 3, category: 'Facility Booking', amount: 7000, reason: 'Clubhouse + deposit', date: '2026-04-05' },
+    { id: 3, userId: 2, category: 'Move-In (MIMO)', amount: 1500, reason: 'Lift + security coordination', date: '2026-04-10' },
+    { id: 4, userId: 3, category: 'Vendor Payment', amount: 250000, reason: 'Security agency contract', date: '2026-04-12' },
+    { id: 5, userId: 2, category: 'Petty Cash', amount: 500, reason: 'Emergency plumbing items', date: '2026-04-15' },
+    { id: 6, userId: 3, category: 'Utility Outflow', amount: 85000, reason: 'Electricity & water systems', date: '2026-04-18' },
+    { id: 7, userId: 2, category: 'Legal/Admin', amount: 10000, reason: 'CA + GST filings', date: '2026-04-20' },
+    { id: 8, userId: 3, category: 'Late Fee', amount: 250, reason: 'Penalty for delayed payments', date: '2026-04-22' },
+  ]);
+}
   if (!localStorage.getItem(KEYS.PROPERTIES)) {
     setItem(KEYS.PROPERTIES, [
       { id: 1, userId: 2, unit: 'A-101', type: '2BHK Apartment', area: '1200 sq.ft', rent: 15000, floor: 1, block: 'A' },
